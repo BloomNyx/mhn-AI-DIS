@@ -7,35 +7,59 @@
     <link rel="stylesheet" href="css/main/main.css">
     <link rel="stylesheet" href="css/commit/header.css">
     <link rel="stylesheet" href="css/commit/footer.css">
+    <link rel="stylesheet" href="css/commit/noonAI.css">
 </head>
 <body>
     <div id="wrap">
-                <div id="header">
+        <div id="header">
             <div class="header-inner">
-                <div class="logo">NOON.AI</div>
+                <div class="logo">
+                    <img src="imges/invalid-name22@3x.png" alt="">
+                </div>
+                  <nav class="nav-menu">
+                    <a href="#" class="active">서비스 소개</a>
+                    <a href="#">요금 안내</a>
+                    <a href="#">가이드</a>
+                    <a href="#">공지사항</a>
+                </nav>
                 <div class="user-area">
                     <button class="logIn-btn">로그인</button>
                 </div>
             </div>
         </div>
-
-        <div id="slider"></div>
-        <div id="contents">
-            <section class="select-section">
+        <div id="noonAI">
+             <section class="select-section">
                 <div class="select-box">
-                    <img src="imges/invalid-name.png" alt="이미지 선택 아이콘">
-                    <p>이미지 선택</p>
+                    <img src="imges/invalid-name@3x.png" 
+                    class="selectImg"
+                    alt="이미지 선택 아이콘">
+                    <span class="be">
+                        비식별 처리할
+                    </span>
+                    <p class="font">이미지 선택</p>
                 </div>
                 <div class="select-box">
                     <img src="imges/invalid-name1.png" alt="동영상 선택 아이콘">
-                    <p>동영상 선택</p>
+                    <span class="be">
+                        비식별 처리할
+                        <p class="font">동영상 선택</p>
+                    </span>
                 </div>
             </section>
 
             <section class="record-section">
                 <div class="record-title">
-                    <span>📄 테넌트님의 최근 DIS 사용 기록</span>
-                    <button class="add-record-btn">더보기 +</button>
+                    <div class="record-subject">
+                        <img src="imges/invalid-name123144141@3x.png" alt="이미지1-1">
+                        <span>테넌트명님의 최근 DIS 사용 기록</span>
+                    </div>
+                    <div id="record-butter">
+                        <button class="add-record-btn"> 
+                            <span>더보기</span>
+                            <img src="imges/invalid-nameaaaa@3x.png"
+                            alt="+">
+                        </button>
+                    </div>
                 </div>
                 <div class="record-table-wrap">
                     <table class="record-table">
@@ -55,52 +79,89 @@
                             <tr>
                                 <td>01</td>
                                 <td>이미지 그룹</td>
-                                <td>1개의 파일일 경우, 영문40자이...</td>
+                                <td>1개의 파일일 경우, 영문40글자이상...</td>
                                 <td>YYYY.MM.DD</td>
                                 <td>복원 가능</td>
-                                <td>0%</td>
-                                <td><button class="detail-btn">상세보기</button></td>
+                                <td>00%</td>
+                                <td><button class="detail-btn">상세내역</button></td>
                             </tr>
-                            <!-- 필요에 따라 행 추가 -->
+
+                            <tr>
+                                <td>02</td>
+                                <td>이미지 그룹</td>
+                                <td>1개의 파일일 경우, 영문36글자이상... 외 00개</td>
+                                <td>YYYY.MM.DD</td>
+                                <td>복원 불가능</td>
+                                <td>완료</td>
+                                <td><button class="detail-btn">상세내역</button></td>
+                            </tr>
+
+                            <tr>
+                                <td>10</td>
+                                <td>동영상 파일</td>
+                                <td>1개의 파일일 경우, 영문40글자이상...</td>
+                                <td>YYYY.MM.DD</td>
+                                <td>복원 가능</td>
+                                <td>00%</td>
+                                <td><button class="detail-btn">상세내역</button></td>
+                            </tr>
+
+                             <tr>
+                                <td>0000000</td>
+                                <td>이미지 그룹</td>
+                                <td>1개의 파일일 경우, 영문40글자이상...</td>
+                                <td>YYYY.MM.DD</td>
+                                <td>복원 가능</td>
+                                <td>00%</td>
+                                <td><button class="detail-btn">상세내역</button></td>
+                            </tr>
+
+                                                         <tr>
+                                <td>0000000</td>
+                                <td>이미지 그룹</td>
+                                <td>1개의 파일일 경우, 영문40글자이상...</td>
+                                <td>YYYY.MM.DD</td>
+                                <td>복원 가능</td>
+                                <td>00%</td>
+                                <td><button class="detail-btn">상세내역</button></td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
             </section>
         </div>
         <div id="footer">
-            <div class="footer-inner">
-                <div class="footer-section">
-                    <h4>회사 정보</h4>
-                    <ul>
-                            <li>상호명: 누온에이아이</li>
-                            <li>사업자등록번호: 123-45-67890</li>
-                            <li>대표: 홍길동</li>
-                        </ul>
-                    </div>
-                    <div class="footer-section">
-                        <h4>고객센터</h4>
-                        <ul>
-                            <li>이메일: support@noonai.com</li>
-                            <li>전화: 02-1234-5678</li>
-                            <li>운영시간: 평일 09:00 - 18:00</li>
-                        </ul>
-                    </div>
-                    <div class="footer-section">
-                        <h4>바로가기</h4>
-                        <ul>
-                            <li><a href="#">이용약관</a></li>
-                            <li><a href="#">개인정보처리방침</a></li>
-                            <li><a href="#">사이트맵</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="topBtn">
-                    <img src="imges/select-arrow-up@3x.png">
-                </div>
-                <div class="footer-bottom">
-                    ⓒ 2025 NoonAI. All rights reserved.
-                </div>
+  <div class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo-links">
+        <div class="footer-logo">
+          <img src="imges/invalid-name22@3x.png" alt="noonAI DIS">
         </div>
+        <div class="footer-links">
+          <a href="#">개인정보처리방침</a>
+          <a href="#">서비스이용약관</a>
+          <a href="#">이메일무단수집거부</a>
+        </div>
+      </div>
+
+      <div class="footer-info">
+        [04794] 서울특별시 성동구 아차산로 103 (성수동2가, 영동테크노타워) 609호<br>
+        대표: <b>조현희</b> | 사업자번호: <b>120-87-45332</b> |
+        통신판매업신고번호: 제0000-서울성동-0000호<br>
+        Tel: <b>070-7553-2372</b> | Fax: <b>02-2051-2370</b>
+      </div>
+
+      <div class="footer-copyright">
+        (주)엠에이치엔씨티 ⓒ 2025 NoonAI. All rights reserved.
+      </div>
     </div>
+
+    <div class="top-btn">
+      <img src="imges/awewqe.png" class="up">
+    </div>
+  </div>
+</div>
+
+</div>
 </body>
 </html>
