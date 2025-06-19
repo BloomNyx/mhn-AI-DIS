@@ -31,26 +31,41 @@
 
 /* 이미지 아이콘 */
 .selectImg {
-  width: 100px;
-  height: 100px;
-  margin-right: 16px;
+    width: 120px;
+  height: 120px;
+  margin: 0 8px 0 0;
   object-fit: contain;
 }
 
 /* 서브 텍스트 */
 .be {
+    width: 80px;
+  height: 18px;
+  margin: 34px 70px 2px 8px;
   font-family: SpoqaHanSansNeo;
   font-size: 14px;
   font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: left;
   color: #595959;
-  margin-bottom: 6px;
 }
 
 /* 메인 텍스트 */
 .font {
+  width: 150px;
+  height: 40px;
+  margin: 2px 0 26px 8px;
   font-family: SpoqaHanSansNeo;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: -0.8px;
+  text-align: center;
   color: #16284d;
 }
 
@@ -126,7 +141,8 @@
   
 }
 
-.record-table-wrap {
+.record-table-wrap{
+  width: 1002px;
   max-width: 988px;
   margin: 0 auto;
   overflow-x: auto;
@@ -148,9 +164,12 @@
 .record-table th, .record-table td {
   padding: 16px;
   text-align: center;
+  padding: 12px;
+  font-family: SpoqaHanSansNeo;
   font-size: 14px;
   border-bottom: 1px solid #e0e0e0;
 }
+
 
 .detail-btn {
   padding: 6px 12px;
