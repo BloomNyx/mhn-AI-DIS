@@ -1,107 +1,99 @@
-/* 비식별 처리 화면: 선택 영역 */
-.select-section {
-  width: 1920px;
-  margin: 100px auto;
-  padding: 40px 0;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
+/* 공통 스타일 */
+#noonAI {
+    justify-content: center;
+    align-items: center;
 }
 
-/* 각각의 선택 박스 */
-.select-box {
-  width: 372px;
-  height: 180px;
-  background-color: white;
-  border-radius: 20px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  padding: 30px 40px;
-  box-sizing: border-box;
-  transition: transform 0.2s ease;
-}
-
-.select-box:hover {
-  transform: translateY(-4px);
-}
-
-/* 이미지 아이콘 */
-.selectImg {
-    width: 120px;
-  height: 120px;
-  margin: 0 8px 0 0;
-  object-fit: contain;
-}
-
-/* 서브 텍스트 */
-.be {
-    width: 80px;
-  height: 18px;
-  margin: 34px 70px 2px 8px;
-  font-family: SpoqaHanSansNeo;
-  font-size: 14px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.29;
-  letter-spacing: normal;
-  text-align: left;
-  color: #595959;
-}
-
-/* 메인 텍스트 */
-.font {
-  width: 150px;
-  height: 40px;
-  margin: 2px 0 26px 8px;
-  font-family: SpoqaHanSansNeo;
-  font-size: 32px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.25;
-  letter-spacing: -0.8px;
-  text-align: center;
-  color: #16284d;
-}
-
-
-.con {
-  width: 1920px;
+/* 업로드 선택 영역 */
+.record-section {
+  width: 100%;
   height: 672px;
-  margin: 380px 0 280px;
-  padding: 90px 466px 146px;
-  background-color: #e9f6ff;
-  margin: 0 auto;
+  background-color: #e6f3ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.DIS- {
-  width: 371px;
-  height: 40px;
-  margin: 0 527px 20px 0;
+.record-title {
+  width: 1002px; /* 고정 너비 설정 */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* 양쪽 정렬 */
+  margin-bottom: 16px;
 }
 
-.img3 {
+.record-subject {
+  display: flex;
+  align-items: center;
+}
+
+.record-subject img {
   width: 40px;
   height: 40px;
-  margin: 0 4px 0 0;
+  margin-right: 8px;
   object-fit: contain;
 }
 
-.-DIS- {
-  width: 390px;
-  height: 30px;
-  margin: 7px 0 3px 4px;
+.record-subject span {
   font-family: SpoqaHanSansNeo;
   font-size: 24px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.25;
-  letter-spacing: normal;
-  text-align: left;
   color: #595959;
+}
+
+.add-record-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 30px;
+  padding: 2px 8px 2px 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.add-record-btn span {
+  font-family: SpoqaHanSansNeo;
+  font-size: 14px;
+  font-weight: bold;
+  color: #595959;
+  margin-right: 4px;
+}
+
+.add-record-btn img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+.record-table-wrap {
+  width: 1002px;
+}
+
+.record-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.record-table th,
+.record-table td {
+  text-align: center;
+  padding: 12px;
+  font-family: SpoqaHanSansNeo;
+  font-size: 14px;
+  color: #595959;
+}
+
+.detail-btn {
+  padding: 4px 8px;
+  background-color: #595959;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
