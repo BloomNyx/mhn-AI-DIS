@@ -1,190 +1,123 @@
-/* 메인 선택 영역 */
-.select-section {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    padding: 60px 20px;
-    flex-wrap: wrap;
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+/* 메인 선택 영역 */
+/* 메인 선택 영역 */
+.select-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 60px 20px;
+  max-width: 1200px;     /* 추가: 가운데 정렬 기준 너비 */
+  margin: 0 auto;         /* 추가: 가운데 정렬 */
+}
+
+/* 선택 박스 */
 .select-box {
-    width: 280px;
-    height: 180px;
-    border-radius: 16px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: transform 0.2s;
+  width: 280px;
+  height: 200px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
 }
 
 .select-box:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .select-box img {
-    width: 48px;
-    margin-bottom: 12px;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 8px; /* 텍스트와의 간격 */
+  object-fit: contain;
 }
 
-.select-box p {
-    font-size: 18px;
-    font-weight: 600;
-}
 
 /* 최근 기록 영역 */
 .record-section {
-    background-color: #eaf4fb;
+  background-color: #eaf4fb;
+  padding: 60px 20px;
 }
 
 .record-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    font-size: 18px;
-    font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .add-record-btn {
-    background: none;
-    border: none;
-    font-weight: 500;
-    color: #1d5dac;
-    cursor: pointer;
+  background: none;
+  border: none;
+  font-weight: 500;
+  color: #1d5dac;
+  cursor: pointer;
 }
 
 .record-table-wrap {
-    overflow-x: auto;
+  overflow-x: auto;
 }
 
 .record-table {
-     width: 988px;
+  width: 988px;
   height: 376px;
-  margin: 20px 0 0;
-  padding: 25px 24px 23px;
+  margin-top: 20px;
+  padding: 25px 24px;
   border-radius: 24px;
   box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.16);
   background-color: #fff;
+  border-collapse: collapse;
 }
 
 .record-table thead {
-    background-color: #fff;
-    border-radius: 24px;
-}
-
-.record-table th, .record-table td {
-    padding: 16px;
-    text-align: center;
-    font-size: 14px;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.detail-btn {
-    padding: 6px 12px;
-    border: none;
-    background-color: #666;
-    color: #fff;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 13px;
-}
-
-
-/* 메인 선택 영역 */
-.select-section {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    padding: 60px 20px;
-    flex-wrap: wrap;
-}
-
-.select-box {
-    width: 280px;
-    height: 180px;
-    border-radius: 16px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-
-.select-box:hover {
-    transform: translateY(-5px);
-}
-
-.select-box img {
-    width: 48px;
-    margin-bottom: 12px;
-}
-
-.select-box p {
-    font-size: 18px;
-    font-weight: 600;
-}
-
-/* 최근 기록 영역 */
-.record-section {
-    background-color: #eaf4fb;
-}
-
-.record-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.add-record-btn {
-    background: none;
-    border: none;
-    font-weight: 500;
-    color: #1d5dac;
-    cursor: pointer;
-}
-
-.record-table-wrap {
-    overflow-x: auto;
-}
-
-.record-table {
-     width: 988px;
-  height: 376px;
-  margin: 20px 0 0;
-  padding: 25px 24px 23px;
-  border-radius: 24px;
-  box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.16);
   background-color: #fff;
 }
 
-.record-table thead {
-    background-color: #fff;
-    border-radius: 24px;
-}
-
-.record-table th, .record-table td {
-    padding: 16px;
-    text-align: center;
-    font-size: 14px;
-    border-bottom: 1px solid #e0e0e0;
+.record-table th,
+.record-table td {
+  padding: 16px;
+  text-align: center;
+  font-size: 14px;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .detail-btn {
-    padding: 6px 12px;
-    border: none;
-    background-color: #666;
-    color: #fff;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 13px;
+  padding: 6px 12px;
+  border: none;
+  background-color: #666;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
 }
-
-
