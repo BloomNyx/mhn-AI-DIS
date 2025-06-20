@@ -7,6 +7,7 @@
     justify-content: center;
     align-items: center;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+     max-width: 1920px; 
 }
 
 /* 내부 컨텐츠 정렬 */
@@ -35,20 +36,67 @@
   font-size: 1rem;
 }
 
-.nav-menu a {
-  color: #666;
-  text-decoration: none;
+.f1 {
+    width: 80px;
+  height: 22px;
+  margin: 3px 54px 5px;
+  font-family: SpoqaHanSansNeo;
+  font-size: 18px;
   font-weight: 500;
-  transition: color 0.2s ease;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: left;
+  color: #595959;
 }
 
+.f2 {
+    width: 55px;
+  height: 22px;
+  margin: 3px 54px 5px;
+  font-family: SpoqaHanSansNeo;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: left;
+  color: #595959;
+}
+
+.f3{
+    width: 72px;
+  height: 22px;
+  margin: 3px 201px 5px 54px;
+  font-family: SpoqaHanSansNeo;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: left;
+  color: #595959;
+}
 .nav-menu a:hover {
   color: #1c7ed6;
 }
 
 .nav-menu a.active {
-  color: #1c7ed6;
+    width: 100px;
+  height: 22px;
+  margin: 3px 54px 5px;
+  font-family: SpoqaHanSansNeo;
+  font-size: 18px;
   font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3fa9f5;
 }
 
 /* 사용자 영역 */

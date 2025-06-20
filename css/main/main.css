@@ -21,6 +21,10 @@ img {
 }
 
 /* 메인 선택 영역 */
+body {
+  width: 1920px;
+  height: 1502px;
+}
 /* 메인 선택 영역 */
 .select-section {
   display: flex;
@@ -29,8 +33,9 @@ img {
   flex-wrap: wrap;
   gap: 40px;
   padding: 60px 20px;
-  max-width: 1200px;     /* 추가: 가운데 정렬 기준 너비 */
-  margin: 0 auto;         /* 추가: 가운데 정렬 */
+  max-width: 1920px;    /* 추가: 가운데 정렬 기준 너비 */
+  margin: 0 auto; 
+  height: 380px;        /* 추가: 가운데 정렬 */
 }
 
 /* 선택 박스 */
@@ -84,34 +89,6 @@ img {
   color: #1d5dac;
   cursor: pointer;
 }
-
-.record-table-wrap {
-  overflow-x: auto;
-}
-
-.record-table {
-  width: 988px;
-  height: 376px;
-  margin-top: 20px;
-  padding: 25px 24px;
-  border-radius: 24px;
-  box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.16);
-  background-color: #fff;
-  border-collapse: collapse;
-}
-
-.record-table thead {
-  background-color: #fff;
-}
-
-.record-table th,
-.record-table td {
-  padding: 16px;
-  text-align: center;
-  font-size: 14px;
-  border-bottom: 1px solid #e0e0e0;
-}
-
 .detail-btn {
   padding: 6px 12px;
   border: none;

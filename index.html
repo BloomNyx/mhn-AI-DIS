@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/commit/header.css">
     <link rel="stylesheet" href="css/commit/footer.css">
     <link rel="stylesheet" href="css/commit/noonAI.css">
+    <link rel="stylesheet" href="css/commit/contents.css">
 </head>
 <body>
     <div id="wrap">
@@ -18,9 +19,9 @@
                 </div>
                   <nav class="nav-menu">
                     <a href="#" class="active">서비스 소개</a>
-                    <a href="#">요금 안내</a>
-                    <a href="#">가이드</a>
-                    <a href="#">공지사항</a>
+                    <a href="#" class="f1">요금 안내</a>
+                    <a href="#" class="f2">가이드</a>
+                    <a href="#" class="f3">공지사항</a>
                 </nav>
                 <div class="user-area">
                     <button class="logIn-btn">로그인</button>
@@ -45,8 +46,6 @@
                     </div>
                 </div>
             </section>
-
-
             <section class="record-section">
                 <div class="record-title">
                     <div class="record-subject">
@@ -61,73 +60,50 @@
                         </button>
                     </div>
                 </div>
-                <div class="record-table-wrap">
-                    <table class="record-table">
-                        <thead>
-                            <tr>
-                                <th>NO.</th>
-                                <th>분류</th>
-                                <th>파일명</th>
-                                <th>업로드 일자</th>
-                                <th>복호화 여부</th>
-                                <th>진행도</th>
-                                <th>상세보기</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <!-- 예시 데이터 -->
-                            <tr>
-                                <td>01</td>
-                                <td>이미지 그룹</td>
-                                <td>1개의 파일일 경우, 영문40글자이상...</td>
-                                <td>YYYY.MM.DD</td>
-                                <td>복원 가능</td>
-                                <td>00%</td>
-                                <td><button class="detail-btn">상세내역</button></td>
-                            </tr>
-
-                            <tr>
-                                <td>02</td>
-                                <td>이미지 그룹</td>
-                                <td>1개의 파일일 경우, 영문36글자이상... 외 00개</td>
-                                <td>YYYY.MM.DD</td>
-                                <td>복원 불가능</td>
-                                <td>완료</td>
-                                <td><button class="detail-btn">상세내역</button></td>
-                            </tr>
-
-                            <tr>
-                                <td>10</td>
-                                <td>동영상 파일</td>
-                                <td>1개의 파일일 경우, 영문40글자이상...</td>
-                                <td>YYYY.MM.DD</td>
-                                <td>복원 가능</td>
-                                <td>00%</td>
-                                <td><button class="detail-btn">상세내역</button></td>
-                            </tr>
-
-                             <tr>
-                                <td>0000000</td>
-                                <td>이미지 그룹</td>
-                                <td>1개의 파일일 경우, 영문40글자이상...</td>
-                                <td>YYYY.MM.DD</td>
-                                <td>복원 가능</td>
-                                <td>00%</td>
-                                <td><button class="detail-btn">상세내역</button></td>
-                            </tr>
-
-                            <tr>
-                                <td>0000000</td>
-                                <td>이미지 그룹</td>
-                                <td>1개의 파일일 경우, 영문40글자이상...</td>
-                                <td>YYYY.MM.DD</td>
-                                <td>복원 가능</td>
-                                <td>00%</td>
-                                <td><button class="detail-btn">상세내역</button></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                    <div class="record-table">
+                        <span class="NO">
+                            NO.
+                        </span>
+                        <span class="DIY">
+                            분류
+                        </span>
+                        <span class="SD">
+                            파일명
+                        </span>
+                        <span class="AD">
+                            업로드 일자
+                        </span>
+                        <span class="AD">
+                            복호화 여부
+                        </span>
+                        <span class="AD">
+                            진행도
+                        </span>
+                        <div class="LINE1"></div>
+                        <div class="Group1">
+                            <div class="Group1-1">
+                                <span class="NUMBER1">
+                                    01
+                                </span>
+                                <span class="imgGroup">
+                                    이미지 그룹
+                                </span>
+                                <span class="file1">
+                                    1개의 파일일 경우, 영문40글자이상...
+                                </span>
+                                <span class="YYYYMMDD">
+                                 YYYY.MM.DD
+                                </span>
+                                <span class="\-">
+                                    복원 가능
+                                </span>
+                            </div>
+                            <button class="detail-btn">상세내역</button>
+                        </div>
+                        <div class="Group2"></div>
+                        <div class="Group3"></div>
+                        <div class="Group4"></div>
+                    </div>
             </section>
         </div>
         <div id="footer">
@@ -155,7 +131,6 @@
         (주)엠에이치엔씨티 ⓒ 2025 NoonAI. All rights reserved.
       </div>
     </div>
-
     <div class="top-btn">
       <img src="imges/awewqe.png" class="up">
     </div>
