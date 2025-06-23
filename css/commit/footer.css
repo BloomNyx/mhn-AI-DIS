@@ -3,124 +3,120 @@
   color: #ffffff;
   padding: 3rem 1rem;
   font-family: 'Pretendard', sans-serif;
-  width: 100%;
+  position: relative;
+  width: 100%; /* ✅ 반응형 적용 위해 수정 */
+  height: 336px;
 }
 
 .footer {
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.footer-inner {
+  width: 100%;
+  max-width: 1000px;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-}
-
-.footer-top {
-  display: flex;
-  justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: wrap;
+  padding: 0 1rem;
+  margin: 0 auto;
 }
 
-.footer-top img {
-  height: 60px;
+.footer-logo-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  height: 34px;
 }
 
+.footer-logo {
+  display: flex;
+  align-items: center;
+  height: 34px;
+}
+
+.footer-logo img {
+  height: 34px;
+  margin-right: 8px;
+  display: block;
+}
+
+/* ✅ 핵심: 텍스트 링크를 로고 중앙과 정렬 */
 .footer-links {
   display: flex;
-  gap: 16px;
+  align-items: center;
   font-size: 0.95rem;
-  white-space: nowrap;
+  color: #ddd;
+  gap: 16px;
+  line-height: 1;
+  position: relative;
+  top: -1px;  /* ✅ 살짝 위로 */
 }
 
 .footer-links a {
-  color: #ffffff;
+  color: #ccc;
   text-decoration: none;
 }
 
 .footer-links a:hover {
+  color: #fff;
   text-decoration: underline;
 }
 
+/* 아래 정보 */
 .footer-info {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  font-size: 0.95rem;
-  color: #ffffff;
-  line-height: 1.6;
-}
-
-.footer-info span {
-  display: inline-block;
-  white-space: nowrap;
-}
-
-.footer-bottom {
   font-size: 0.85rem;
-  color: #999999;
-  text-align: center;
-  line-height: 1.5;
-}
-#footer {
-  background-color: #13254b;
-  color: #ffffff;
-  padding: 3rem 1rem;
-  font-family: 'Pretendard', sans-serif;
-  width: 100%;
+  line-height: 1.6;
+  color: #bbb;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  text-align: left;
+  margin: 0 auto
+  right -300px;
 }
 
-.footer {
-  max-width: 1200px;
+.footer-info b {
+  color: #fff;
+}
+
+.footer-copyright {
+  font-size: 0.75rem;
+  margin-top: 4px;
+  color: #999;
+  text-align: left;
   margin: 0 auto;
+}
+
+
+/* 상단 이동 버튼 */
+.top-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  background-color: #3bb4f2;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
 }
 
-.footer-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
+.top-btn:hover {
+  background-color: #1da1f2;
 }
 
-.footer-top img {
-  height: 60px;
-}
-
-.footer-links {
-  display: flex;
-  gap: 16px;
-  font-size: 0.95rem;
-  white-space: nowrap;
-}
-
-.footer-links a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
-}
-
-.footer-info {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  font-size: 0.95rem;
-  color: #ffffff;
-  line-height: 1.6;
-}
-
-.footer-info span {
-  display: inline-block;
-  white-space: nowrap;
-}
-
-.footer-bottom {
-  font-size: 0.85rem;
-  color: #999999;
-  text-align: center;
-  line-height: 1.5;
+.up {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
 }
