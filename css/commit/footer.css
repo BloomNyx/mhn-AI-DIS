@@ -3,116 +3,124 @@
   color: #ffffff;
   padding: 3rem 1rem;
   font-family: 'Pretendard', sans-serif;
-  position: relative;
-  width: 100%; /* ✅ 반응형 적용 위해 수정 */
+  width: 100%;
 }
 
 .footer {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  box-sizing: border-box;
-}
-
-.footer-inner {
-  width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 0 1rem;
-  margin: 0 auto;
-}
-
-.footer-logo-links {
-  display: flex;
-  align-items: center;
   gap: 2rem;
-  margin-bottom: 1rem;
-  height: 34px;
 }
 
-.footer-logo {
+.footer-top {
   display: flex;
-  align-items: center;
-  height: 34px;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
-.footer-logo img {
-  height: 34px;
-  margin-right: 8px;
-  display: block;
+.footer-top img {
+  height: 60px;
 }
 
-/* ✅ 핵심: 텍스트 링크를 로고 중앙과 정렬 */
 .footer-links {
   display: flex;
-  align-items: center;
-  font-size: 0.95rem;
-  color: #ddd;
   gap: 16px;
-  line-height: 1;
-  position: relative;
-  top: -1px;  /* ✅ 살짝 위로 */
+  font-size: 0.95rem;
+  white-space: nowrap;
 }
 
 .footer-links a {
-  color: #ccc;
+  color: #ffffff;
   text-decoration: none;
 }
 
 .footer-links a:hover {
-  color: #fff;
   text-decoration: underline;
 }
 
-/* 아래 정보 */
 .footer-info {
-  font-size: 0.85rem;
-  line-height: 1.6;
-  color: #bbb;
-  margin-top: 10px;
-  margin-bottom: 4px;
-  text-align: left;
-  margin: 0 auto;
-}
-
-.footer-info b {
-  color: #fff;
-}
-
-.footer-copyright {
-  font-size: 0.75rem;
-  margin-top: 4px;
-  color: #999;
-  text-align: left;
-  margin: 0 auto;
-}
-
-
-/* 상단 이동 버튼 */
-.top-btn {
-  position: absolute;
-  bottom: 20px;
-  right: 30px;
-  background-color: #3bb4f2;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: background-color 0.3s ease;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.95rem;
+  color: #ffffff;
+  line-height: 1.6;
 }
 
-.top-btn:hover {
-  background-color: #1da1f2;
+.footer-info span {
+  display: inline-block;
+  white-space: nowrap;
 }
 
-.up {
-  width: 16px;
-  height: 16px;
-  object-fit: contain;
+.footer-bottom {
+  font-size: 0.85rem;
+  color: #999999;
+  text-align: center;
+  line-height: 1.5;
+}
+#footer {
+  background-color: #13254b;
+  color: #ffffff;
+  padding: 3rem 1rem;
+  font-family: 'Pretendard', sans-serif;
+  width: 100%;
+}
+
+.footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-top img {
+  height: 60px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 16px;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.95rem;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.footer-info span {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.footer-bottom {
+  font-size: 0.85rem;
+  color: #999999;
+  text-align: center;
+  line-height: 1.5;
 }
