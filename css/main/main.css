@@ -21,7 +21,7 @@ img {
 }
 
 /* 메인 선택 영역 */
-body {
+html,body {
   width: 1920px;
   height: 1502px;
 }
