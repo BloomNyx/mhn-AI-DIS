@@ -1,6 +1,7 @@
 /* 푸터 전체 */
 #footer {
-  width: 100%;
+  width: 1920px;
+  height: 336px;
   background-color: #13254b;
   color: #ffffff;
   padding: 3rem 1rem;
@@ -11,7 +12,7 @@
 
 /* 내부 최대 너비 + 중앙 정렬 */
 .footer {
-  width: 100%;
+  width: 1920px;
   max-width: 1280px;
   display: flex;
   flex-direction: column;
@@ -23,6 +24,7 @@
 .footer-links {
   display: flex;
   align-items: center;
+  top: -3000px;
   gap: 2rem;
   font-size: 14px;
   flex-wrap: wrap;
@@ -43,7 +45,7 @@
   font-size: 14px;
   line-height: 1.8;
   gap: 0.4rem;
-  padding: 1px 40px 46px 640px;
+  padding: 1px 42px 46px 646px;
 }
 .footer-line div {
   word-break: keep-all;
@@ -118,28 +120,23 @@
   color: #fff;
 }
 
-.top-btn {
-    width: 44px;
+.top {
+  width: 44px;
   height: 44px;
-  margin: 40px 0 80px;
+  margin: 200px 46px 46px 500px;
+  padding: 9px;
+}
+
+.top-btu {
+  width: 44px;
+  height: 44px;
   padding: 9px;
   border-radius: 22px;
   background-color: #3fa9f5;
 }
 
-.top-btn img {
-   width: 26px;
-  height: 26px;
+.top-btu img {
+  width: 22px;
+  height: 22px;
   object-fit: contain;
-}
-
-.top-btn:hover {
-  background-color: #1da1f2;
-}
-
-.up {
-    width: 44px;
-  height: 44px;
-  margin: 39px 0 0 376px;
-  padding: 9px;
-}
+} 
