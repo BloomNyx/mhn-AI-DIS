@@ -35,9 +35,6 @@
   text-decoration: none;
   margin-right: 1rem;
 }
-.footer-links a:hover {
-  text-decoration: underline;
-}
 
 /* 정보 라인 */
 .footer-line {
@@ -46,11 +43,81 @@
   font-size: 14px;
   line-height: 1.8;
   gap: 0.4rem;
-  padding: 1px 40px 46px 485px;
+  padding: 1px 40px 46px 640px;
 }
 .footer-line div {
   word-break: keep-all;
 }
+
+.footer-left {
+  width: 736px;
+  height: 18px;
+  font-family: SpoqaHanSansNeo;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: -0.14px;
+  text-align: left;
+  color: #c2c2c2;
+}
+
+.footer-right {
+  width: 736px;
+  height: 18px;
+  font-family: SpoqaHanSansNeo;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: -0.14px;
+  text-align: left;
+  color: #c2c2c2;
+}
+.footer-right .text-style-1 {
+  color: #fff;
+}
+.footer-right .text-style-2 {
+  font-weight: 100;
+}
+
+.footer-b {
+  width: 736px;
+  height: 18px;
+  font-family: SpoqaHanSansNeo;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: -0.14px;
+  text-align: left;
+  color: #fff;
+}
+.footer-b .text-style-1 {
+  color: #c2c2c2;
+}
+.footer-b .text-style-2 {
+  font-weight: 100;
+  color: #c2c2c2;
+}
+
+.footer-a {
+  width: 280px;
+  height: 15px;
+  font-family: SpoqaHanSansNeo;
+  font-size: 12px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+
 .top-btn {
     width: 44px;
   height: 44px;
