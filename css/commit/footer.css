@@ -1,122 +1,50 @@
+/* 푸터 전체 */
 #footer {
+  width: 100%;
   background-color: #13254b;
   color: #ffffff;
   padding: 3rem 1rem;
   font-family: 'Pretendard', sans-serif;
-  position: relative;
-  width: 100%; /* ✅ 반응형 적용 위해 수정 */
-  height: 336px;
-}
-
-.footer {
-  width: 100%;
   display: flex;
   justify-content: center;
-  text-align: center;
-  align-items: center;
-  box-sizing: border-box;
 }
 
-.footer-inner {
+/* 내부 최대 너비 + 중앙 정렬 */
+.footer {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1280px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 0 1rem;
-  margin: 0 auto;
+  gap: 1rem;
 }
 
-.footer-logo-links {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  margin-bottom: 1rem;
-  height: 34px;
-}
-
-.footer-logo {
-  display: flex;
-  align-items: center;
-  height: 34px;
-}
-
-.footer-logo img {
-  height: 34px;
-  margin-right: 8px;
-  display: block;
-}
-
-/* ✅ 핵심: 텍스트 링크를 로고 중앙과 정렬 */
+/* 상단 링크 */
 .footer-links {
   display: flex;
-  align-items: center;
-  font-size: 0.95rem;
-  color: #ddd;
-  gap: 16px;
-  line-height: 1;
-  position: relative;
-  top: -1px;  /* ✅ 살짝 위로 */
+  gap: 1.5rem;
+  font-size: 14px;
 }
-
 .footer-links a {
-  color: #ccc;
+  color: #ffffff;
   text-decoration: none;
 }
-
 .footer-links a:hover {
-  color: #fff;
   text-decoration: underline;
 }
 
-/* 아래 정보 */
-.footer-info {
-  font-size: 0.85rem;
-  line-height: 1.6;
-  color: #bbb;
-  margin-top: 10px;
-  margin-bottom: 4px;
-  text-align: left;
-  margin: 0 auto
-  right -1000px;
-}
-
-.footer-info b {
-  color: #fff;
-}
-
-.footer-copyright {
-  font-size: 0.75rem;
-  margin-top: 4px;
-  color: #999;
-  text-align: left;
-  margin: 0 auto;
-}
-
-
-/* 상단 이동 버튼 */
-.top-btn {
-  position: absolute;
-  bottom: 20px;
-  right: 30px;
-  background-color: #3bb4f2;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+/* 좌우 정보 줄 */
+.footer-line {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: background-color 0.3s ease;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
-.top-btn:hover {
-  background-color: #1da1f2;
-}
-
-.up {
-  width: 16px;
-  height: 16px;
-  object-fit: contain;
+/* span을 inline-block으로 강제 정렬 */
+.footer-line span {
+  display: inline-block;
+  max-width: 48%;
+  vertical-align: top;
+  word-break: keep-all;
 }
