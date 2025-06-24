@@ -24,6 +24,7 @@ img {
 html,body {
   width: 1920px;
   height: 1502px;
+  margin: 0 auto;
 }
 /* 메인 선택 영역 */
 .select-section {

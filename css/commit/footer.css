@@ -1,24 +1,17 @@
-/* 푸터 전체 */
 #footer {
-  width: 1920px;
-  height: 336px;
   background-color: #13254b;
   color: #ffffff;
   padding: 3rem 1rem;
   font-family: 'Pretendard', sans-serif;
-  display: flex;
-  justify-content: center;
 }
-
-/* 내부 최대 너비 + 중앙 정렬 */
 .footer {
-  width: 1920px;
-  max-width: 1280px;
+  max-width: 1420px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   align-items: center;
 }
+
 
 /* 상단 링크 및 로고 */
 .footer-links {
@@ -52,8 +45,9 @@
 }
 
 .footer-left {
-  width: 736px;
+  /* width: 736px; */
   height: 18px;
+  /* margin: 5px 376px 24px 54px; */
   font-family: SpoqaHanSansNeo;
   font-size: 14px;
   font-weight: normal;
@@ -121,22 +115,23 @@
 }
 
 .top {
-  width: 44px;
+    width: 44px;
   height: 44px;
-  margin: 200px 46px 46px 500px;
+  margin: 39px 0 0 70px;
   padding: 9px;
 }
 
 .top-btu {
-  width: 44px;
+    width: 44px;
   height: 44px;
+  margin: -120px 0 0 800px;
   padding: 9px;
   border-radius: 22px;
   background-color: #3fa9f5;
 }
 
 .top-btu img {
-  width: 22px;
-  height: 22px;
+  width: 26px;
+  height: 26px;
   object-fit: contain;
 } 
