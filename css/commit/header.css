@@ -17,102 +17,59 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 54px;
 }
 
 /* 로고 */
 .logo img {
     width: 198px;
     height: 28px;
-    margin: 0;
+    margin: 0 0 0 100px;
 }
 
 /* 메뉴 전체 */
 .nav-menu {
-    display: flex;
-    align-items: center;
-    gap: 32px; /* 간격 좁힘 */
-    font-size: 1rem;
-    margin-left: 40px; /* 로고와 간격 */
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-left: 40px;
 }
 
-/* 메뉴 항목 */
-.f2 {
-    margin: 3px 54px 5px;
+.f2, .f3, .f4, .active {
+  white-space: nowrap;
   font-family: SpoqaHanSansNeo;
   font-size: 18px;
   font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.22;
-  letter-spacing: normal;
-  text-align: left;
   color: #595959;
-}
-.f3 {
-    margin: 3px 54px 5px;
-  font-family: SpoqaHanSansNeo;
-  font-size: 18px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.22;
-  letter-spacing: normal;
-  text-align: left;
-  color: #595959;
+  text-align: center;
+  margin: 0 0 0 54px;
 }
 
-.f4 {
-  font-family: SpoqaHanSansNeo;
-  font-size: 18px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.22;
-  letter-spacing: normal;
-  text-align: left;
-  color: #595959;
-}
-
-/* 활성화된 메뉴 */
-.nav-menu a.active {
-  width: 99px;
-  height: 22px;
-  margin: 3px 54px 5px;
-  font-family: SpoqaHanSansNeo;
-  font-size: 18px;
+.active {
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.22;
-  letter-spacing: normal;
-  text-align: left;
   color: #3fa9f5;
 }
 
-/* 로그인 버튼 */
 .user-area {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: auto;
 }
 
 .logIn-btn {
   width: 100px;
   height: 30px;
-  margin: 0px 0 0 201px;
   padding: 4px 25px;
   border-radius: 15px;
   background-color: #16284d;
 }
 
-
 .t6 {
   width: 50px;
   height: 22px;
   font-family: SpoqaHanSansNeo;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -120,5 +77,4 @@
   letter-spacing: normal;
   text-align: center;
   color: #fff;
-  margin: 0 auto;
 }
